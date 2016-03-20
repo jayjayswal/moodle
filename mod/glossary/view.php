@@ -360,7 +360,7 @@ if ($showcommonelements) {
     }
 /// End glossary controls
 //        print_box_end(); /// glossarycontrol
-    echo '</div>';
+    echo '</div><div style="clear:both;"></div>';
 
 //        print_box('&nbsp;', 'clearer');
 }
