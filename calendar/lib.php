@@ -523,13 +523,12 @@ function calendar_get_upcoming($courses, $groups, $users, $daysinfuture, $maxeve
     $coursecache = array();
 
     $processed = 0;
-    $now = time(); // We 'll need this later
-    $usermidnighttoday = usergetmidnight($now);
+     = time(); // We 'll need this later
 
     if ($fromtime) {
         $display->tstart = $fromtime;
     } else {
-        $display->tstart = $usermidnighttoday;
+        $display->tstart = $now;
     }
 
     // This works correctly with respect to the user's DST, but it is accurate
